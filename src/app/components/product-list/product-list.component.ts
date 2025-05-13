@@ -13,10 +13,30 @@ import { CommonModule } from '@angular/common';
 })
 export class ProductListComponent {
   products: Product[] = [
-    { id: 1, name: 'Perfume A', price: 50 },
-    { id: 2, name: 'Perfume B', price: 80 },
-    { id: 3, name: 'Perfume C', price: 120 }
+    {
+      id: 1,
+      name: 'Perfume A',
+      price: 50,
+      image: 'https://images.pexels.com/photos/9659895/pexels-photo-9659895.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      description: 'A refreshing floral scent perfect for daytime wear, with notes of jasmine and citrus.'
+    },
+    {
+      id: 2,
+      name: 'Perfume B',
+      price: 80,
+      image: 'https://images.pexels.com/photos/9659894/pexels-photo-9659894.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      description: 'A deep and warm fragrance with hints of vanilla, musk, and cedarwood.'
+    },
+    {
+      id: 3,
+      name: 'Perfume C',
+      price: 120,
+      image: 'https://images.pexels.com/photos/9659892/pexels-photo-9659892.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      description: 'A luxurious blend of spices and rare blossoms, designed for special evenings.'
+    }
   ];
+  
+  
 
   constructor(private store: Store) {}
 

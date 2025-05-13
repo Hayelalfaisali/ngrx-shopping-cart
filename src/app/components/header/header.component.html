@@ -1,0 +1,14 @@
+<header class="header">
+    <div class="logo">
+      <a routerLink="/">My Perfume Store</a>
+    </div>
+  
+    <nav class="nav">
+      <a routerLink="/">Home</a>
+  
+      <button class="cart-button" (click)="goToCart()">
+        🛒 Cart <span *ngIf="cartCount$ | async as count">({{ count }})</span>
+      </button>
+    </nav>
+  </header>
+  
