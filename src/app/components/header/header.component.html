@@ -4,11 +4,13 @@
     </div>
   
     <nav class="nav">
-      <a routerLink="/">Home</a>
-  
-      <button class="cart-button" (click)="goToCart()">
-        🛒 Cart <span *ngIf="cartCount$ | async as count">({{ count }})</span>
-      </button>
-    </nav>
+        <a routerLink="/">Home</a>
+      
+        <button class="cart-button" (click)="goToCart()">
+          <span class="cart-icon">🛒</span> Cart
+          <span *ngIf="cartCount$ | async as count" class="cart-badge">({{ count }})</span>
+        </button>
+      </nav>
+      
   </header>
   
